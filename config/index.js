@@ -6,7 +6,6 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -24,13 +23,22 @@ module.exports = {
         pathRewrite: {
           '^/get_desclist': ''
         }
+      },
+      // 获取歌词，做一个代理
+      '/api/lyric': {
+        target: 'http://ustbhuangyi.com/music/api/lyric',
+        // target: 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg',
+        changeOrigin: true,
+        pathRewrite: {
+            '^/api/lyric': ''
+        }
       }
     },
 
     // Various Dev Server settings
     host: '0.0.0.0', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: true,
+    autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-

@@ -8,13 +8,17 @@ import VueLazyload from 'vue-lazyload'
 
 import 'common/stylus/index.styl'
 
-Vue.config.productionTip = false
-
 fastclick.attach(document.body)
+
+Vue.config.productionTip = false
 
 Vue.use(VueLazyload, {
   loading: require('common/image/default.png')
 })
+
+// function noop() {}
+// window.MessageChannel = noop
+// window.setImmediate = noop
 
 /* eslint-disable no-new */
 new Vue({
