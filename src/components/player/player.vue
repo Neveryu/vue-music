@@ -319,6 +319,9 @@
             offsetWidth = -window.innerWidth
             opacity = 0
             this.currentShow = 'lyric'
+            // 加这个可以将this.touch.percent初始化
+            // 否则滑动一次后，就可以点击切换了
+            this.touch = {}
           } else {
             offsetWidth = 0
             opacity = 1
@@ -328,6 +331,9 @@
             offsetWidth = 0
             this.currentShow = 'cd'
             opacity = 1
+            // 加这个可以将this.touch.percent初始化
+            // 否则滑动一次后，就可以点击切换了
+            this.touch = {}
           } else {
             offsetWidth = -window.innerWidth
             opacity = 0

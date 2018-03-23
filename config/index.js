@@ -10,6 +10,14 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+      // 获取歌单信息
+      '/get_cdinfo': {
+        target: 'http://ustbhuangyi.com/music/api/getCdInfo',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/get_cdinfo': ''
+        }
+      },
       '/get_qqmusic_recommend': {
         target: 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg',
         changeOrigin: true,
