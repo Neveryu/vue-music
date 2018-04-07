@@ -1,5 +1,5 @@
 import jsonp from '@/common/js/jsonp'
-import { commonParams } from './config'
+import { commonParams, options } from './config'
 import axios from 'axios'
 
 export function getSongUrl(songmid) {
@@ -56,12 +56,18 @@ export function getLyric(mid) {
   })
 }
 
+/**
+* 使用下面的jsonp的方法抓取链接，虽然原接口是jsonp的，但是有header限制
+* jsonp这个工具包支持传header吗
+* 所以还是使用上面这个吧，开发环境代理一下，线上静态环境暂无办法
+*/
+
 // 获取歌词接口 jsonp 尝试
 export function _getLyric(mid) {
   // 获取歌词接口 jsonp 尝试（qq音乐的接口，未成功）
-  // const url = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg'
+  const url = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg'
   // 获取格式接口 jsonp 尝试（黄老师的接口）
-  const url = 'http://ustbhuangyi.com/music/api/lyric'
+  // const url = 'http://ustbhuangyi.com/music/api/lyric'
   const data = Object.assign({}, commonParams, {
     pcachetime: +new Date(),
     songmid: mid,
@@ -75,5 +81,5 @@ export function _getLyric(mid) {
     platform: 'yqq',
     needNewCode: 0
   })
-  return jsonp(url, data, '')
+  return jsonp(url, data, options)
 }

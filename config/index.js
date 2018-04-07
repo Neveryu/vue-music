@@ -32,7 +32,7 @@ module.exports = {
           '^/get_desclist': ''
         }
       },
-      // 获取歌词，做一个代理
+      // 获取歌词，做一个代理(开发环境用这个没问题)
       '/api/lyric': {
         target: 'http://ustbhuangyi.com/music/api/lyric',
         // target: 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg',

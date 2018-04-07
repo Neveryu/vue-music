@@ -65,5 +65,6 @@ function filterSinger(singer) {
   singer.forEach((s) => {
     ret.push(s.name)
   })
+  // console.log(ret.join('/'))
   return ret.join('/')
 }
