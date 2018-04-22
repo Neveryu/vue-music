@@ -12,7 +12,7 @@
       </div>
       <div class="shortcut" v-show="!query"></div>
       <div class="search-result" v-show="query">
-        <suggest :query="query" :showSinger="showSinger"></suggest>
+        <suggest :query="query" :showSinger="showSinger" @select="selectSuggest"></suggest>
       </div>
     </div>
   </transition>
@@ -42,6 +42,9 @@
       },
       search(query) {
         this.query = query
+      },
+      selectSuggest() {
+        
       }
     }
   }
