@@ -100,7 +100,7 @@
 
 <script>
   import animations from 'create-keyframe-animation'
-  import { mapGetters, mapMutations } from 'vuex'
+  import { mapGetters, mapMutations, mapActions } from 'vuex'
   import { prefixStyle } from '@/common/js/dom'
   import ProgressBar from '@/base/progress-bar/progress-bar'
   import ProgressCircle from '@/base/progress-circle/progress-circle'
@@ -163,6 +163,9 @@
       ...mapMutations({
         setFullScreen: 'SET_FULL_SCREEN'
       }),
+      ...mapActions([
+        'savePlayHistory'
+      ]),
       showPlaylist() {
         this.$refs.playlist.show()
       },
@@ -224,6 +227,7 @@
       },
       ready() {
         this.songReady = true
+        this.savePlayHistory(this.currentSong)
       },
       error() {
         this.songReady = true
