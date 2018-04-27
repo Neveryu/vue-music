@@ -19,9 +19,18 @@ export default {
     MHeader,
     Tab,
     Player
+  },
+  mounted() {
+    document.getElementById('app').addEventListener('touchmove', function(e) {
+      e.preventDefault()
+    })
   }
 }
 </script>
 
 <style scoped lang="stylus">
+  #app
+    position: fixed
+    top: 0
+    width: 100%
 </style>
