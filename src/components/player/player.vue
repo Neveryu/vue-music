@@ -68,7 +68,7 @@
               <i @click="next" class="icon-next"></i>
             </div>
             <div class="icon i-right">
-              <i class="icon icon-not-favorite"></i>
+              <i class="icon" :class="getFavoriteIcon(currentSong)" @click="toggleFavorite(currentSong)"></i>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@
       </div>
     </transition>
     <playlist ref="playlist"></playlist>
-    <audio :src="currentSong.url" ref="audio" @canplay="ready" @error="error" @timeupdate="updateTime" @ended="end"></audio>
+    <audio :src="currentSong.url" ref="audio" @play="ready" @error="error" @timeupdate="updateTime" @ended="end"></audio>
   </div>
 </template>
 
@@ -195,6 +195,7 @@
         }
         if(this.playList.legnth === 1) {
           this.loop()
+          return
         } else {
           let index = this.currentIndex + 1
           if(index === this.playList.length) {
@@ -213,6 +214,7 @@
         }
         if(this.playList.legnth === 1) {
           this.loop()
+          return
         } else {
           let index = this.currentIndex - 1
           if(index === -1) {
@@ -253,6 +255,9 @@
       },
       getLyric() {
         this.currentSong.getLyric().then((lyric) => {
+          if(this.currentSong.lyric !== lyric) {
+            return
+          }
           this.currentLyric = new Lyric(lyric, this.handleLyric)
           if(this.playing) {
             this.currentLyric.play()
@@ -411,13 +416,17 @@
         }
         if(this.currentLyric) {
           this.currentLyric.stop()
+          this.currentTime = 0
+          this.playingLyric = ''
+          this.currentLineNum = 0
         }
         // this.$nextTick(() => {
         //   this.$refs.audio.play()
         //   this.getLyric()
         // })
         // wechat 后台js不执行，切换到前台后让他执行
-        setTimeout(() => {
+        clearTimeout(this.timer)
+        this.timer = setTimeout(() => {
           this.$refs.audio.play()
           this.getLyric()
         }, 1000)
