@@ -23,7 +23,9 @@ export default {
   mounted() {
     document.getElementById('app').addEventListener('touchmove', function(e) {
       e.preventDefault()
-    })
+      // e.stopPropagation()
+      // e.stopImmediatePropagation()
+    }, false)
   }
 }
 </script>
