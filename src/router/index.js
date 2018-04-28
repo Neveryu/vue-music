@@ -18,6 +18,7 @@ const SingerDetail = () => import('@/components/singer-detail/singer-detail')
 const Disc = () => import('@/components/disc/disc')
 const TopList = () => import('@/components/top-list/top-list')
 const UserCenter = () => import('@/components/user-center/user-center')
+const ProjectDesc = () => import('@/components/project-desc/project-desc')
 
 Vue.use(Router)
 
@@ -71,6 +72,10 @@ export default new Router({
     {
       path: '/user',
       component: UserCenter
+    },
+    {
+      path: '/projectdesc',
+      component: ProjectDesc
     }
   ]
 })
