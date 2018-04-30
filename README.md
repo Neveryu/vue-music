@@ -12,10 +12,12 @@
   <a href="https://github.com/Reactive-Extensions/RxJS"><img src="https://img.shields.io/badge/rxjs-v5.0.2-blue.svg" alt="rxjs"></a>
   <a href="https://github.com/hilongjw/vue-lazyload"><img src="https://img.shields.io/badge/vue--lazyload-v1.0.0--rc7-yellow.svg" alt="vue-lazyload"></a>
 </p>
-<p class="center">
-  欢迎体验，[https://neveryu.github.io/music/](https://neveryu.github.io/music/),在手机上效果更好，微信扫码体验
+
+  欢迎体验：[https://neveryu.github.io/music/](https://neveryu.github.io/music/)
+  
+  在手机上效果更好，微信扫码体验：
+
   ![vue-music](https://neveryu.github.io/images/vue-music-1.png)
-</p>
 
 
 ## Build Setup
@@ -46,14 +48,14 @@ npm install --registry=https://registry.npm.taobao.org
 
 ## screenshot
 
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/like.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/playing.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/playlist1.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/projectdesc.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/rank.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/recommend.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/search.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/search2.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/singer.png)
-![](https://github.com/Neveryu/vue-music/tree/master/screenshot/singerdetail.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/like.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/playing.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/playlist1.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/projectdesc.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/rank.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/recommend.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/search.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/search2.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/singer.png)
+![](https://github.com/Neveryu/vue-music/blob/master/screenshot/singerdetail.png)
 
