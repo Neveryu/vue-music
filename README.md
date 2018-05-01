@@ -17,24 +17,35 @@
   <a href="https://github.com/ustbhuangyi/storage"><img src="https://img.shields.io/badge/good--storage-1.0.1-yellow.svg" alt="good-storage"></a>
   <a href="https://github.com/webmodules/jsonp"><img src="https://img.shields.io/badge/jsonp-0.2.1-brightgreen.svg" alt="jsonp"></a>
 </p>
-<p align="center">欢迎体验：<a href="https://neveryu/github.io/music/">https://neveryu.github.io/music/</a>，在手机上效果更好，微信扫码体验：</p>
+<p align="center">欢迎体验：<a href="https://neveryu.github.io/music/">https://neveryu.github.io/music/</a>，在手机上效果更好，微信扫码体验：</p>
 <p align="center">
-  <a href="https://neveryu/github.io/music/"><img src="https://neveryu.github.io/images/vue-music-1.png" alt="vue-music"></a>
+  <a href="https://neveryu.github.io/music/"><img src="https://neveryu.github.io/images/vue-music-1.png" alt="vue-music"></a>
 </p>
 
 ## 实现的功能
 1、音乐列表、歌单、歌手、排行、榜单、推荐
+
 2、音乐播放、暂停、上一曲、下一曲、喜欢
-2、播放列表、添加到播放列表、历史列表
-3、搜索单曲、歌手、专辑、MV
-4、查看歌手页面、专辑页面、MV
-5、热门搜索
-6、搜索历史记录
-7、排行榜
-8、切换播放模式
-9、歌词
-10、个人中心
-11、项目介绍
+
+3、播放列表、添加到播放列表、历史列表
+
+4、搜索单曲、歌手、专辑、MV
+
+5、查看歌手页面、专辑页面、MV
+
+6、热门搜索
+
+7、搜索历史记录
+
+8、排行榜
+
+9、切换播放模式
+
+10、歌词
+
+11、个人中心
+
+12、项目介绍
 
 ## Build Setup
 
