@@ -11,19 +11,15 @@
   <a href="https://github.com/surmon-china/vue-awesome-swiper"><img src="https://img.shields.io/badge/vue--awesome--swiper-v2.2.6-blue.svg" alt="vue-awesome-swiper"></a>
   <a href="https://github.com/Reactive-Extensions/RxJS"><img src="https://img.shields.io/badge/rxjs-v5.0.2-blue.svg" alt="rxjs"></a>
   <a href="https://github.com/hilongjw/vue-lazyload"><img src="https://img.shields.io/badge/vue--lazyload-v1.4.1-yellow.svg" alt="vue-lazyload"></a>
-  ![](https://img.shields.io/badge/axios-0.17.1-brightgreen.svg)
-  ![](https://img.shields.io/badge/better--scroll-1.6.0-blue.svg)
-  ![](https://img.shields.io/badge/fastclick-1.0.6-orange.svg)
-  ![](https://img.shields.io/badge/good--storage-1.0.1-yellow.svg)
-  ![](https://img.shields.io/badge/jsonp-0.2.1-brightgreen.svg)
+  <a href="https://github.com/axios/axios"><img src="https://img.shields.io/badge/axios-0.17.1-brightgreen.svg" alt="axios"></a>
+  <a href="https://github.com/ustbhuangyi/better-scroll"><img src="https://img.shields.io/badge/better--scroll-1.6.0-blue.svg" alt="better-scroll"></a>
+  <a href="https://github.com/ftlabs/fastclick"><img src="https://img.shields.io/badge/fastclick-1.0.6-orange.svg" alt="fastclick"></a>
+  <a href="https://github.com/ustbhuangyi/storage"><img src="https://img.shields.io/badge/good--storage-1.0.1-yellow.svg" alt="good-storage"></a>
+  <a href="https://github.com/webmodules/jsonp"><img src="https://img.shields.io/badge/jsonp-0.2.1-brightgreen.svg" alt="jsonp"></a>
 </p>
+<p align="center">欢迎体验：<a href="https://neveryu/github.io/music/">https://neveryu.github.io/music/</a>，在手机上效果更好，微信扫码体验：</p>
 <p align="center">
-
-  欢迎体验：[https://neveryu.github.io/music/](https://neveryu.github.io/music/)
-  
-  在手机上效果更好，微信扫码体验：
-
-  ![vue-music](https://neveryu.github.io/images/vue-music-1.png)
+  <a href="https://neveryu/github.io/music/"><img src="https://neveryu.github.io/images/vue-music-1.png" alt="vue-music"></a>
 </p>
 
 ## 实现的功能
