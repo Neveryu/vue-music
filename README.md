@@ -6,19 +6,39 @@
   <a href="https://github.com/vuejs/vue-cli"><img src="https://img.shields.io/badge/vue--cli-v2.9.3-blue.svg" alt="vue-cli"></a>
   <a href="https://github.com/vuejs/vue"><img src="https://img.shields.io/badge/vue-v2.4.1-blue.svg" alt="Vue"></a>
   <img src="https://img.shields.io/npm/v/npm.svg"></img>
-  <a href="https://github.com/vuejs/vue-router"><img src="https://img.shields.io/badge/vue--router-v2.1.1-blue.svg" alt="vue-router"></a>
-  <a href="https://github.com/vuejs/vuex"><img src="https://img.shields.io/badge/vuex-v2.0.0-blue.svg" alt="vuex"></a>
+  <a href="https://github.com/vuejs/vue-router"><img src="https://img.shields.io/badge/vue--router-v3.0.1-blue.svg" alt="vue-router"></a>
+  <a href="https://github.com/vuejs/vuex"><img src="https://img.shields.io/badge/vuex-v3.0.1-blue.svg" alt="vuex"></a>
   <a href="https://github.com/surmon-china/vue-awesome-swiper"><img src="https://img.shields.io/badge/vue--awesome--swiper-v2.2.6-blue.svg" alt="vue-awesome-swiper"></a>
   <a href="https://github.com/Reactive-Extensions/RxJS"><img src="https://img.shields.io/badge/rxjs-v5.0.2-blue.svg" alt="rxjs"></a>
-  <a href="https://github.com/hilongjw/vue-lazyload"><img src="https://img.shields.io/badge/vue--lazyload-v1.0.0--rc7-yellow.svg" alt="vue-lazyload"></a>
+  <a href="https://github.com/hilongjw/vue-lazyload"><img src="https://img.shields.io/badge/vue--lazyload-v1.4.1-yellow.svg" alt="vue-lazyload"></a>
+  ![](https://img.shields.io/badge/axios-0.17.1-brightgreen.svg)
+  ![](https://img.shields.io/badge/better--scroll-1.6.0-blue.svg)
+  ![](https://img.shields.io/badge/fastclick-1.0.6-orange.svg)
+  ![](https://img.shields.io/badge/good--storage-1.0.1-yellow.svg)
+  ![](https://img.shields.io/badge/jsonp-0.2.1-brightgreen.svg)
 </p>
+<p align="center">
 
   欢迎体验：[https://neveryu.github.io/music/](https://neveryu.github.io/music/)
   
   在手机上效果更好，微信扫码体验：
 
   ![vue-music](https://neveryu.github.io/images/vue-music-1.png)
+</p>
 
+## 实现的功能
+1、音乐列表、歌单、歌手、排行、榜单、推荐
+2、音乐播放、暂停、上一曲、下一曲、喜欢
+2、播放列表、添加到播放列表、历史列表
+3、搜索单曲、歌手、专辑、MV
+4、查看歌手页面、专辑页面、MV
+5、热门搜索
+6、搜索历史记录
+7、排行榜
+8、切换播放模式
+9、歌词
+10、个人中心
+11、项目介绍
 
 ## Build Setup
 
@@ -46,7 +66,7 @@ npm run prod.server.js
 npm install --registry=https://registry.npm.taobao.org
 ```
 
-## screenshot
+## 截图
 
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/like.png)
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/playing.png)
