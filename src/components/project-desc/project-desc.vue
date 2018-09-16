@@ -35,6 +35,9 @@
       hideDetail() {
         this.$router.back()
       }
+    },
+    mounted() {
+      this.$refs.detail.refresh()
     }
   }
 </script>

@@ -39,6 +39,11 @@
               <div v-if="currentLyric">
                 <p ref="lyricLine" class="text" :class="{'current': currentLineNum === index}" v-for="(line, index) in currentLyric.lines">{{line.txt}}</p>
               </div>
+              <div v-else>
+                <p class="text">词：Never Yu</p>
+                <p class="text">最怕歌曲有歌词</p>
+                <p class="text">最怕歌词有故事</p>
+              </div>  
             </div>
           </scroll>
         </div>
