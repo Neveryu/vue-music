@@ -167,5 +167,3 @@ export function getSongList1(disstid) {
   })
   return jsonp(url, data, options)
 }
-
-

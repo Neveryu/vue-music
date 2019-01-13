@@ -2,7 +2,7 @@
 
 <p align="center">基于 Vue 包括音乐推荐、搜索、播放、榜单、收藏</p>
 <p align="center">
-  <a href="http://neveryu.github.io/vue-music/index.html"><img src="https://img.shields.io/travis/rust-lang/rust.svg" alt="Vue"></a>
+  <a href="https://neveryu.github.io/vue-music/index.html"><img src="https://img.shields.io/travis/rust-lang/rust.svg" alt="Vue"></a>
   <a href="https://github.com/vuejs/vue-cli"><img src="https://img.shields.io/badge/vue--cli-v2.9.3-blue.svg" alt="vue-cli"></a>
   <a href="https://github.com/vuejs/vue"><img src="https://img.shields.io/badge/vue-v2.4.1-blue.svg" alt="Vue"></a>
   <img src="https://img.shields.io/npm/v/npm.svg"></img>
@@ -19,7 +19,7 @@
 </p>
 <p align="center">欢迎体验：<a href="https://neveryu.github.io/vue-music/index.html">https://git.io/fhnor</a>，在手机上效果更好，微信扫码体验：</p>
 <p align="center">
-  <a href="https://neveryu.github.io/vue-music/index.html"><img src="https://neveryu.github.io/images/vue-music-1.png" alt="vue-music"></a>
+  <a href="https://neveryu.github.io/vue-music/index.html"><img src="https://neveryu.github.io/vue-music/static/vue-music-visit.png" alt="vue-music"></a>
 </p>
 
 ## 实现的功能
