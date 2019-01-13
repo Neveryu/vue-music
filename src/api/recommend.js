@@ -122,26 +122,6 @@ export function getDiscList1() {
 }
 
 export function getSongList(disstid) {
-  const url = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg'
-  const data = Object.assign({}, commonParams, {
-    type: 1,
-    json: 1,
-    utf8: 1,
-    onlysong: 0,
-    format: 'json',
-    disstid: 3787143827,
-    g_tk: 788911273,
-    hostUin: 0,
-    inCharset: 'utf8',
-    outCharset: 'utf-8',
-    notice: 0,
-    platform: 'yqq',
-    needNewCode: 0
-  })
-  return jsonp(url, data, options)
-}
-
-export function getSongList1(disstid) {
   const url = '/get_cdinfo'
   const data = Object.assign({}, commonParams, {
     g_tk: 1928093487,
@@ -166,3 +146,26 @@ export function getSongList1(disstid) {
     return res.data
   })
 }
+
+// 因为上面这个方法是使用的开发环境的node的服务端代理proxyTable来代理的
+// 发布到我的网站上，是没有服务端代理来帮我们的
+// 所以使用下面这个 jsonp
+export function getSongList1(disstid) {
+  const url = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg'
+  const data = Object.assign({}, commonParams, {
+    type: 1,
+    json: 1,
+    utf8: 1,
+    onlysong: 0,
+    disstid,
+    hostUin: 0,
+    inCharset: 'utf8',
+    outCharset: 'utf-8',
+    notice: 0,
+    platform: 'yqq',
+    needNewCode: 0
+  })
+  return jsonp(url, data, options)
+}
+
+
