@@ -68,7 +68,6 @@ npm install --registry=https://registry.npm.taobao.org
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/like.png)
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/playing.png)
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/playlist1.png)
-![](https://github.com/Neveryu/vue-music/blob/master/screenshot/projectdesc.png)
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/rank.png)
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/recommend.png)
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/search.png)
