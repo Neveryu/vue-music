@@ -1,8 +1,18 @@
 import jsonp from '@/common/js/jsonp'
 import { commonParams, options } from './config'
-import axios from 'axios'
 
-export function getSongUrl(songmid) {
+/**
+ * 之前是用这个方法来获取vkey，然后拼接歌曲url
+ * 现在已失效！
+ * 现在已失效！！
+ * 现在已失效！！！
+ * @param  {[type]} songmid [description]
+ * @return {[type]}         [description]
+ */
+export function _getSongUrl(songmid) {
+  // this is old function
+  // has been broken
+  // stop use
   const url = 'https://c.y.qq.com/base/fcgi-bin/fcg_music_express_mobile3.fcg'
   const data = Object.assign({}, commonParams, {
     g_tk: 5381,
@@ -22,38 +32,37 @@ export function getSongUrl(songmid) {
   return jsonp(url, data, '')
 }
 
-export function getLyric(mid) {
-  const url = '/api/lyric'
-  // 真实接口
-  // const url = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg'
+/**
+ * 可以获取到vkey以及完整的歌曲url
+ * --------------
+ * @param  {[type]} songmid [description]
+ * @return {[type]}         [description]
+ */
+export function getSongUrl(songmid) {
+  const url = 'http://u.y.qq.com/cgi-bin/musicu.fcg'
   const data = Object.assign({}, commonParams, {
-    pcachetime: +new Date(),
-    songmid: mid,
-    g_tk: 5381,
-    loginUin: 0,
-    hostUin: 0,
-    format: 'jsonp',
-    inCharset: 'utf8',
-    outCharset: 'utf-8',
-    notice: 0,
-    platform: 'yqq',
-    needNewCode: 0
+    uin: 0,
+    data: {
+      'url_mid': {
+        'module': 'vkey.GetVkeyServer',
+        'method': 'CgiGetVkey',
+        'param': {
+          'guid': '15424864',
+          'songmid': [songmid],
+          'songtype': [0],
+          'uin': '0',
+          'loginflag': 0,
+          'platform': '23'
+        }
+      }
+    }
   })
-  return axios.get(url, {
-    // 如果是使用黄老师的接口是不需要 headers 的
-    // headers: {
-    //   Referer: 'http://ustbhuangyi.com/music/',
-    //   Host: 'ustbhuangyi.com'
-    // },
-    // headers: {
-    //   referer: 'https://c.y.qq.com/',
-    //   host: 'y.qq.com'
-    //   // authority: 'c.y.qq.com'
-    // },
-    params: data
-  }).then((res) => {
-    return Promise.resolve(res.data)
-  })
+  return jsonp(url, data, '')
+}
+
+export function getLyric(songid) {
+  const url = `//api.darlin.me/music/lyric/${songid}`
+  return jsonp(url, null, '')
 }
 
 /**

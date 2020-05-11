@@ -75,3 +75,9 @@ npm install --registry=https://registry.npm.taobao.org
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/singer.png)
 ![](https://github.com/Neveryu/vue-music/blob/master/screenshot/singerdetail.png)
 
+## License
+
+[MIT](https://github.com/Neveryu/vue-music/blob/master/LICENSE)
+
+Copyright (c) 2017-present NeverYu
+

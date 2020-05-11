@@ -105,8 +105,15 @@
               list.forEach((musicData) => {
                 if(musicData.id && musicData.album.mid) {
                   getSongUrl(musicData.mid).then(resp => {
+                    /*
+                      old
+                     */
+                    /*
                     let vkey = resp.data.items[0].vkey
                     let url = `http://dl.stream.qqmusic.qq.com/${resp.data.items[0].filename}?vkey=${vkey}&guid=7175649092&uin=0&fromtag=66`
+                    */
+                    let vkey = resp.url_mid.data.midurlinfo[0].vkey
+                    let url = resp.url_mid.data.midurlinfo[0].purl
                     Object.assign(musicData, {url})
                     this.result.push(createSongWithSearch(musicData))
                   }).catch(err => {
@@ -176,8 +183,15 @@
           data.song.list.forEach((musicData) => {
             if(musicData.id && musicData.album.mid) {
               getSongUrl(musicData.mid).then(resp => {
+                /*
+                  old
+                 */
+                /*
                 let vkey = resp.data.items[0].vkey
                 let url = `http://dl.stream.qqmusic.qq.com/${resp.data.items[0].filename}?vkey=${vkey}&guid=7175649092&uin=0&fromtag=66`
+                */
+                let vkey = resp.url_mid.data.midurlinfo[0].vkey
+                let url = resp.url_mid.data.midurlinfo[0].purl
                 Object.assign(musicData, {url})
                 ret.push(createSongWithSearch(musicData))
               }).catch(err => {
@@ -199,8 +213,15 @@
           // 270(interval)
           if(musicData.id && musicData.album.mid) {
             getSongUrl(musicData.mid).then(resp => {
+              /*
+                old
+               */
+              /*
               let vkey = resp.data.items[0].vkey
               let url = `http://dl.stream.qqmusic.qq.com/${resp.data.items[0].filename}?vkey=${vkey}&guid=7175649092&uin=0&fromtag=66`
+              */
+              let vkey = resp.url_mid.data.midurlinfo[0].vkey
+              let url = resp.url_mid.data.midurlinfo[0].purl
               Object.assign(musicData, {url})
               ret.push(createSongWithSearch(musicData))
             }).catch(err => {

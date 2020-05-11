@@ -8,7 +8,7 @@
   import {mapGetters} from 'vuex'
   import {getSongList} from '@/api/recommend'
   import {ERR_OK} from '@/api/config'
-  import {createSong} from '@/common/js/song'
+  import { createSong } from '@/common/js/song'
   import { getSongUrl } from '@/api/song'
   export default {
     components: {
@@ -40,8 +40,15 @@
           if(musicData.songid && musicData.albumid) {
             // ret.push(createSong(musicData))
             getSongUrl(musicData.songmid).then(resp => {
+              /*
+                old
+               */
+              /*
               let vkey = resp.data.items[0].vkey
               let url = `http://dl.stream.qqmusic.qq.com/${resp.data.items[0].filename}?vkey=${vkey}&guid=7175649092&uin=0&fromtag=66`
+              */
+              let vkey = resp.url_mid.data.midurlinfo[0].vkey
+              let url = resp.url_mid.data.midurlinfo[0].purl
               Object.assign(musicData, { url })
               ret.push(createSong(musicData))
             }).catch(err => {
