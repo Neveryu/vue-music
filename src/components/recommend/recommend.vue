@@ -5,8 +5,8 @@
         <div v-if="recommends.length" class="slider-wrapper">
           <slider>
             <div v-for="(item, index) of recommends" :key="index">
-              <a :href="item.linkUrl" class="needsclick">
-                <img class="needsclick" @load="loadImage" :src="item.picUrl" alt="">
+              <a :href="item.jumpurl" class="needsclick">
+                <img class="needsclick" @load="loadImage" :src="item.pic" alt="">
               </a>
             </div>
           </slider>
@@ -84,7 +84,7 @@
         // })
         getRecommend1().then((res) => {
           if (res.code === ERR_OK) {
-            this.recommends = res.data.slider
+            this.recommends = res.data.focus
           }
         })
       },

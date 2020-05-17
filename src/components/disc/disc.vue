@@ -6,7 +6,7 @@
 <script>
   import MusicList from '@/components/music-list/music-list'
   import {mapGetters} from 'vuex'
-  import {getSongList} from '@/api/recommend'
+  import {getSongList1} from '@/api/recommend'
   import {ERR_OK} from '@/api/config'
   import { createSong } from '@/common/js/song'
   import { getSongUrl } from '@/api/song'
@@ -28,7 +28,7 @@
           this.$router.push('/recommend')
           return
         }
-        getSongList(this.disc.content_id).then((res) => {
+        getSongList1(this.disc.content_id).then((res) => {
           if(res.code === ERR_OK) {
             this.songs = this._normalizeSongs(res.cdlist[0].songlist)
           }

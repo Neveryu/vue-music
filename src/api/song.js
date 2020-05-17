@@ -39,7 +39,7 @@ export function _getSongUrl(songmid) {
  * @return {[type]}         [description]
  */
 export function getSongUrl(songmid) {
-  const url = 'http://u.y.qq.com/cgi-bin/musicu.fcg'
+  const url = '//u.y.qq.com/cgi-bin/musicu.fcg'
   const data = Object.assign({}, commonParams, {
     uin: 0,
     data: {

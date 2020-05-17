@@ -9,12 +9,21 @@ export function getRecommend() {
 // 因为上面这个方法是使用的开发环境的node的服务端代理proxyTable来代理的
 // 发布到我的网站上，是没有服务端代理来帮我们的
 // 所以使用下面这个 jsonp
+// https://c.y.qq.com/v8/fcg-bin/fcg_first_yqq.fcg?
+// format=jsonp&tpl=v12&page=other&rnd=0
+// &g_tk=1589722736690&loginUin=0&hostUin=0&inCharset=utf8&outCharset=GB2312
+// &platform=yqq&needNewCode=0&jsonpCallback=_jsonpb6iymrcimgj
 export function getRecommend1() {
-  const url = 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg'
+  const url = 'https://c.y.qq.com/v8/fcg-bin/fcg_first_yqq.fcg'
   const data = Object.assign({}, commonParams, {
-    plarform: 'h5',
-    uin: 0,
-    needNewCode: 1
+    tpl: 'v12',
+    page: 'other',
+    rnd: 0,
+    plarform: 'yqq',
+    loginUin: 0,
+    hostUin: 0,
+    needNewCode: 0,
+    format: 'jsonp'
   })
   return jsonp(url, data, options)
 }

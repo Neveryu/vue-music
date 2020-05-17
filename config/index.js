@@ -12,8 +12,14 @@ module.exports = {
     proxyTable: {
       // 获取歌单信息
       '/get_cdinfo': {
-        target: 'http://ustbhuangyi.com/music/api/getCdInfo',
+        target: 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg',
+        bypass: function(req, res, proxyOptions) {
+          req.headers.referer = 'https://c.y.qq.com'
+          req.headers.host = 'c.y.qq.com'
+        },
+        secure: false,
         changeOrigin: true,
+        cssSourceMap: false,
         pathRewrite: {
           '^/get_cdinfo': ''
         }
